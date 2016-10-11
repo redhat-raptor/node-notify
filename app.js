@@ -19,6 +19,7 @@ try {
   }
 
   require('./lib/notifiers/mandrill');
+  require('./lib/notifiers/hipchat');
 }
 catch(e) {
   console.error(e.stack);
