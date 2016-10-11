@@ -36,7 +36,8 @@
             },
             "hipchat": {
                 "api_key": "",
-                "default_room": ""
+                "default_room": "",
+                "from": "node-notify"
             }
         }
     }
