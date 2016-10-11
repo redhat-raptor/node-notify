@@ -38,3 +38,6 @@ jspm_packages
 
 # Ignore IDE dirs
 .idea
+
+# Ignore custom config
+config/app.json

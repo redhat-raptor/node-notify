@@ -1,0 +1,43 @@
+{
+    "default": {
+        "port": "#{process.env.PORT}"
+    },
+    "development": {
+        "notifiers": {
+            "mandrill": {
+                "api_key": "",
+                "message_params": {
+                    "from_email": "from@example.com",
+                    "from_name": "From name of user",
+                    "headers": {"Reply-To": "from@example.com"},
+                    "to": [
+                        {"email": "to@example.com", "name": "To name of user", "type": "to"}
+                    ]
+                }
+            },
+            "hipchat": {
+                "api_key": "",
+                "default_room": ""
+            }
+        }
+    },
+    "production": {
+        "notifiers": {
+            "mandrill": {
+                "api_key": "",
+                "message_params": {
+                    "from_email": "from@example.com",
+                    "from_name": "From name of user",
+                    "headers": {"Reply-To": "from@example.com"},
+                    "to": [
+                        {"email": "to@example.com", "name": "To name of user", "type": "to"}
+                    ]
+                }
+            },
+            "hipchat": {
+                "api_key": "",
+                "default_room": ""
+            }
+        }
+    }
+}

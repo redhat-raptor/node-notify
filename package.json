@@ -1,18 +1,24 @@
 {
   "name": "node-notify",
-  "description": "Sends notification via email, hipchat and others",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "author": "Redhat Raptor <redhat.raptor@gmail.com>",
-  "dependencies": {
-    "axon": "*"
+  "scripts": {
+    "start": "node ./bin/www"
   },
   "keywords": [
     "pubsub",
     "socket",
     "emitter"
   ],
-  "engines": {
-    "node": "0.10.x || 0.11.x"
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "express": "~4.13.1",
+    "jade": "~1.11.0",
+    "morgan": "~1.6.1",
+    "serve-favicon": "~2.3.0",
+    "underscore": "^1.8.3"
   },
   "repository": {
     "type": "git",
