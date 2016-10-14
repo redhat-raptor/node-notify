@@ -4,9 +4,12 @@ var ne = require('../lib/notification-event');
 
 /* GET home page. */
 router.post('/notifications', function(req, res) {
-  var via = req.body.via || 'all';
-  ne.emit(via, req.body);
+  if(!req.body.via) {
+    res.status(400).send('Bad request');
+    return;
+  }
 
+  ne.emit(req.body.via, req.body);
   res.json(req.body);
 });
 
