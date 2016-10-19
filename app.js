@@ -59,7 +59,7 @@ if (app.get('env') === 'development') {
       error: err
     });
 
-    console.err(err);
+    console.error(err);
   });
 }
 
